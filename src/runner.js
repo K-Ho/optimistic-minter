@@ -13,11 +13,11 @@ const {
 	Wallet,
 } = require('ethers');
 
-const optimismLVM = 'http://18.188.217.219:8545';
+const optimismLVM = 'https://goerli.optimism.io';
 const network = 'mainnet';
 const provider = new JsonRpcProvider(optimismLVM);
-const synthetixAddress = '0xc8A4b8c02E9364F908094969FD11aA4ee6A88819';
-const proxySusdAddress = '0x69488c0d17E4405B4075618837C75C67C8FD4B60';
+const synthetixAddress = '0x398c0c6B4DD3Bdd673B3fd910D776fFf56708062';
+const proxySusdAddress = '0x87c8B069DCbD6a423E7C0fb43826984557982073';
 
 const synthAbi = snx.getSource({ network, contract: 'Synth' }).abi;
 const synthetixAbi = snx.getSource({ network, contract: 'Synthetix' }).abi;
